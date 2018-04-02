@@ -666,9 +666,9 @@ function transform(file, api/*, options*/) {
       } else {
         // if the segment is < 50 chars just make sure it has proper spacing
         return importStatement
-          .replace(/,\s*/g, ', ') // ensure there is a space after commas
-          .replace(/\{\s*/, '{ ')
-          .replace(/\s*\}/, ' }');
+          .replace(/,\s*/g, ', '); // ensure there is a space after commas
+          // .replace(/\{\s*/, '{ ')
+          // .replace(/\s*\}/, ' }');
       }
     });
   }
